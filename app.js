@@ -26,4 +26,4 @@ app.use(express.json())
 // middleware that listen every request which hits on this server. It tells that whenever you recieve /api form frontend in any api got to this router function
 app.use("/api",router)
 
-app.listen(PORT,() => console.log(`server is running on localhost: ${PORT}`))
+app.listen(PORT,() => console.log(`server is running on ${PORT}`))
