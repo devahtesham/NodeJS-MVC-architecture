@@ -6,9 +6,9 @@ const router = express.Router()
 
 
 // for testing purpose
-// router.get("/sample",(request,response)=>{
-//     response.send("Api Hit !!")
-// })
+router.get("/sample",(request,response)=>{
+    response.send("Api Hit !!")
+})
 
 // ====================== AUTHENTICATION APIS ===========================
 // signup api 
