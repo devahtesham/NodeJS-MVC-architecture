@@ -6,7 +6,7 @@ const router = express.Router()
 
 
 // for testing purpose
-router.get("/sample",(request,response)=>{
+router.get("/testing",(request,response)=>{
     console.log("API Hit");
     response.send("Api Hit !!")
 })
