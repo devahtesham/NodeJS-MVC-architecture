@@ -10,7 +10,7 @@ const router = require("./routes/routes");
 require('dotenv').config()
 
 const PORT = process.env.PORT || 5000;
-const BASE_URI = `mongodb+srv://devahtesham:devahtesham@cluster0.tjplgan.mongodb.net/CRUD-APP`
+const BASE_URI = process.env.DATABASE_CONNECTION_STRING
     
 // DB connection
 mongoose.connect(BASE_URI)
