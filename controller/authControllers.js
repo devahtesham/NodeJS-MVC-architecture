@@ -79,7 +79,7 @@ const authControllers = {
                         const tokenObj = {
                             ...user
                         }
-                        const token = jwt.sign(tokenObj,"UserLoginTokenKey")
+                        const token = jwt.sign(tokenObj,process.env.JWT_SECRETE_KEY)
                         // console.log("token",token);
 
                         response.status(200).json({
