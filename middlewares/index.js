@@ -4,7 +4,7 @@ const middlewares = {
     authMiddleware: (req,res,next)=>{
         try {
             const token = req.headers.authorization.split(" ")[1]
-            const isUserTrue = jwt.verify(token,process.env.JWT_KEY)
+            const isUserTrue = jwt.verify(token,process.env.JWT_SECRETE_KEY)
             // agr token verify hoga tu ye mjhy us user ka object return krega _doc property k andr otherwise error aaega agr token wrong hogaa tu
             // console.log("isUserTrue",isUserTrue._doc);
 
